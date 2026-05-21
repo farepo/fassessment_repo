@@ -102,7 +102,7 @@ Notation:
 | codellama_7b_q4 | N | N | 4.00 | 0 |
 | codellama_7b_q4 + MetaGPT | Y | N | 56.73 | 0 |
 | codellama_7b_q4 + ChatDev | Y | N | 238.00 | 0 |
-| codellama_7b_q4 (run 3) + AgileCoder | Y | Y |  | 0 |
+| codellama_7b_q4 + AgileCoder | Y | N | 378.0 | 0 |
 | codellama_7b_q4 + HyperAgent | N | N | 12.26 | 0 |
 | codellama_7b_fp16 (run 3) | Y | Y | 12.98 | 0 |
 | codellama_7b_fp16 (run 3) + MetaGPT | Y | Y | 97.27 | 0 |
