@@ -87,6 +87,11 @@ Notation:
 | llama3_70b_q4 + ChatDev | Y | Y | 3379.00 | 6 |
 | llama3_70b_q4 + AgileCoder | Y | Y | 31906.00 | 6 |
 | llama3_70b_q4 + HyperAgent | Y | Y | 779.40 | 0 |
+| llama3_3b_q4 | Y | N | 27.96 | 0 |
+| llama3_3b_q4 + MetaGPT | Y | Y | 41.83 | 0 |
+| llama3_3b_q4 + ChatDev | N | N | 1540.00 | 0 |
+| llama3_3b_q4 + AgileCoder | Y | N | 330.00 | 0 |
+| llama3_3b_q4 + HyperAgent | Y | Y | 42.05 | 0 |
 | devstral_24b_fp16 | Y | Y | 440.00 | 7 |
 | devstral_24b_fp16 + MetaGPT | Y | Y | 1400.02 | 8 |
 | devstral_24b_fp16 + ChatDev | Y | N | 4506.00 | 0 |

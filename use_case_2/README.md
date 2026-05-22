@@ -99,11 +99,6 @@ Notation:
 | gemma_27b_fp16 (run 2) + ChatDev | Y | Y | 12021.00 | 4 |
 | gemma_27b_fp16 (run 3) + AgileCoder | Y | Y | 6720.00 | 5 |
 | gemma_27b_fp16 (run 2) + HyperAgent | Y | Y | 3044.76 | 2 |
-| codellama_7b_q4 | N | N | 4.00 | 0 |
-| codellama_7b_q4 + MetaGPT | Y | N | 56.73 | 0 |
-| codellama_7b_q4 + ChatDev | Y | N | 238.00 | 0 |
-| codellama_7b_q4 + AgileCoder | Y | N | 378.0 | 0 |
-| codellama_7b_q4 + HyperAgent | N | N | 12.26 | 0 |
 | codellama_7b_fp16 (run 3) | Y | Y | 12.98 | 0 |
 | codellama_7b_fp16 (run 3) + MetaGPT | Y | Y | 97.27 | 0 |
 | codellama_7b_fp16 + ChatDev | Y | N | 437.00 | 0 |
@@ -124,11 +119,11 @@ Notation:
 | llama3_3b_fp16 + ChatDev | N | N | 199.00 | 0 |
 | llama3_3b_fp16 + AgileCoder | N | N | 187.00 | 0 |
 | llama3_3b_fp16 + HyperAgent | Y | Y | 244.64 | 1 |
-| llama3_3b_q4 | Y | N | 7.00 | 0 |
-| llama3_3b_q4 + MetaGPT | Y | N | 393.83 | 0 |
+| llama3_3b_q4 | Y | N | 7.60 | 0 |
+| llama3_3b_q4 (run 3) + MetaGPT | Y | N | 64.69 | 0 |
 | llama3_3b_q4 + ChatDev | Y | N | 185.00 | 0 |
 | llama3_3b_q4 + AgileCoder | N | N | 51.00 | 0 |
-| llama3_3b_q4 (run 3) + HyperAgent | Y | Y | 8.22 | 1 |
+| llama3_3b_q4 + HyperAgent (run 3) | Y | Y | 8.22 | 1 |
 | qwen2_3b_q4 | Y | N | 28.00 | 0 |
 | qwen2_3b_q4 + MetaGPT | Y | N | 96.27 | 0 |
 | qwen2_3b_q4 (run 3) + ChatDev | Y | Y | 200.00 | 0 |
