@@ -216,3 +216,9 @@ The visual appeal and overall presentation of the game.
 |            | Navigator Manager       |  386.20 |   136.56 |
 |            | Editor Manager          |   26.15 |   330.55 |
 |            | Executor Manager        |   20.23 |   499.02 |
+
+
+### Runtime errors
+Number and type of runtime errors per framework
+
+![Runtime errors graph](images/RuntimeErrors.png)
