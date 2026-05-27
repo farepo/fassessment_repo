@@ -99,8 +99,136 @@ Notation:
 | devstral_24b_fp16 + HyperAgent | Y | N | 2649.08 | 0 |
 
 
+# Qualitative evaluation - Objective metrics
+Only models that produced executable code are reported
+
+### MetaGPT
+
+| LLM | Time to Death (s) | Snake/board ratio | System status clear | GUI | Grid rendered |
+|---|---|---|---|---|---|
+| qwen2_5_32b_instruct_q4_K_M  | na   | 1/30; 1/50 | No | Yes | No  |
+| gemma3_27b_it_fp16           | 0.06 | na         | No | Yes | No  |
+| qwen2_5_7b_instruct_q4_K_M   | 0.06 | na         | No | Yes | No  |
+| gpt_oss_20b                  | 0.42 | 1/12; 1/12 | No | No  | No  |
+| llama3_3_70b_instruct_q3_K_M | 2.73 | 1/30; 1/40 | No | Yes | Yes |
+| devstral_24b_small_2505_fp16 | 4.8  | 1/48; 1/68 | No | Yes | No  |
+
+### ChatDev
+
+| LLM | Time to Death (s) | Snake/board ratio | System status clear | GUI | Grid rendered |
+|---|---|---|---|---|---|
+| gpt_oss_20b                  | 2.29 | 1/20; 1/20 | Yes | Yes | Yes |
+| llama3_3_70b_instruct_q3_K_M | 2.67 | 1/30; 1/40 | No  | Yes | No  |
+| llama3_3_70b_instruct_q4_K_M | 0.49 | 1/30; 1/40 | Yes | Yes | Yes |
+
+### AgileCoder
+
+| LLM | Time to Death (s) | Snake/board ratio | System status clear | GUI | Grid rendered |
+|---|---|---|---|---|---|
+| qwen2_5_32b_instruct_q4_K_M  | 3.84 | 1/60; 1/70 | No | Yes | No  |
+| gemma3_27b_it_fp16           | 0.95 | 1/20; 1/20 | No | Yes | No  |
+| codellama_7b_instruct_fp16   | 0.15 | na         | No | Yes | No  |
+| qwen2_5_7b_instruct_fp16     | 0.0  | na         | No | Yes | No  |
+| qwen2_5_7b_instruct_q4_K_M   | 0.0  | 1/10; 1/10 | No | Yes | No  |
+| gpt_oss_20b                  | 0.0  | 1/10; 1/10 | No | Yes | Yes |
+| llama3_3_70b_instruct_q3_K_M | na   | na         | No | Yes | No  |
+| llama3_3_70b_instruct_q4_K_M | ?    | 1/30; 1/40 | No | Yes | No  |
+
+### HyperAgent
+
+| LLM | Time to Death (s) | Snake/board ratio | System status clear | GUI | Grid rendered |
+|---|---|---|---|---|---|
+| qwen2_5_32b_instruct_q4_K_M        | 0.36 | 1/30; 1/40 | No  | Yes | Yes |
+| llama3_3_70b_instruct_q3_K_M       | 0.85 | 1/20; 1/20 | Yes | Yes | Yes |
+| llama3_3_70b_instruct_q3_K_M_run_2 | 1.72 | 1/30; 1/30 | Yes | Yes | No  |
+| llama3_3_70b_instruct_q3_K_M_run_3 | 2.72 | 1/30; 1/40 | Yes | Yes | No  |
+| llama3_3_70b_instruct_q4_K_M       | 0.0  | na         | No  | Yes | Yes |
+
+### No-framework
+
+| LLM | Time to Death (s) | Snake/board ratio | System status clear | GUI | Grid rendered |
+|---|---|---|---|---|---|
+| qwen2_5_32b_instruct_q4_K_M               | 2.10 | 1/40; 1/60 | No  | Yes | No  |
+| gemma3_27b_it_fp16                        | 1.37 | 1/20; 1/30 | Yes | Yes | No  |
+| qwen2_5_7b_instruct_fp16                  | 2.1  | 1/40; 1/60 | No  | Yes | No  |
+| qwen2_5_7b_instruct_q4_K_M                | na   | 1/20; 1/20 | No  | Yes | No  |
+| gpt_oss_20b_run_2                         | 0.48 | 1/10; 1/10 | No  | Yes | Yes |
+| deepseek_coder_v2_16b_lite_instruct_fp16  | 0.91 | 1/10; 1/10 | No  | Yes | No  |
+| gemma3_27b_it_q4_K_M                      | 1.07 | 1/20; 1/20 | Yes | Yes | Yes |
+| llama3_3_70b_instruct_q3_K_M              | 2.81 | 1/30; 1/40 | Yes | Yes | No  |
+| llama3_3_70b_instruct_q3_K_M_run_2        | 1.61 | 1/30; 1/20 | Yes | Yes | Yes |
+| llama3_3_70b_instruct_q4_K_M              | 2.10 | 1/25; 1/35 | No  | Yes | No  |
+| llama3_3_70b_instruct_q4_K_M_run_3        | 2.80 | 1/30; 1/40 | Yes | Yes | No  |
+| nemotron_70b_instruct_q8_0                | 0.81 | 1/10; 1/10 | Yes | Yes | No  |
+| qwen2_5_32b_instruct_fp16                 | na   | 1/40; 1/50 | Yes | Yes | No  |
+| qwen2_5_coder_32b_instruct_fp16           | 2.21 | 1/40; 1/50 | No  | Yes | No  |
+| qwen2_5_coder_32b_instruct_q4_K_M         | na   | 1/40; 1/50 | No  | Yes | No  |
+### MetaGPT
+
+| LLM | Time to Death (s) | Snake/board ratio | System status clear | GUI | Grid rendered |
+|---|---|---|---|---|---|
+| qwen2_5_32b_instruct_q4_K_M  | na   | 1/30; 1/50 | No | Yes | No  |
+| gemma3_27b_it_fp16           | 0.06 | na         | No | Yes | No  |
+| qwen2_5_7b_instruct_q4_K_M   | 0.06 | na         | No | Yes | No  |
+| gpt_oss_20b                  | 0.42 | 1/12; 1/12 | No | No  | No  |
+| llama3_3_70b_instruct_q3_K_M | 2.73 | 1/30; 1/40 | No | Yes | Yes |
+| devstral_24b_small_2505_fp16 | 4.8  | 1/48; 1/68 | No | Yes | No  |
+
+### ChatDev
+
+| LLM | Time to Death (s) | Snake/board ratio | System status clear | GUI | Grid rendered |
+|---|---|---|---|---|---|
+| gpt_oss_20b                  | 2.29 | 1/20; 1/20 | Yes | Yes | Yes |
+| llama3_3_70b_instruct_q3_K_M | 2.67 | 1/30; 1/40 | No  | Yes | No  |
+| llama3_3_70b_instruct_q4_K_M | 0.49 | 1/30; 1/40 | Yes | Yes | Yes |
+
+### AgileCoder
+
+| LLM | Time to Death (s) | Snake/board ratio | System status clear | GUI | Grid rendered |
+|---|---|---|---|---|---|
+| qwen2_5_32b_instruct_q4_K_M  | 3.84 | 1/60; 1/70 | No | Yes | No  |
+| gemma3_27b_it_fp16           | 0.95 | 1/20; 1/20 | No | Yes | No  |
+| codellama_7b_instruct_fp16   | 0.15 | na         | No | Yes | No  |
+| qwen2_5_7b_instruct_fp16     | 0.0  | na         | No | Yes | No  |
+| qwen2_5_7b_instruct_q4_K_M   | 0.0  | 1/10; 1/10 | No | Yes | No  |
+| gpt_oss_20b                  | 0.0  | 1/10; 1/10 | No | Yes | Yes |
+| llama3_3_70b_instruct_q3_K_M | na   | na         | No | Yes | No  |
+| llama3_3_70b_instruct_q4_K_M | ?    | 1/30; 1/40 | No | Yes | No  |
+
+### HyperAgent
+
+| LLM | Time to Death (s) | Snake/board ratio | System status clear | GUI | Grid rendered |
+|---|---|---|---|---|---|
+| qwen2_5_32b_instruct_q4_K_M        | 0.36 | 1/30; 1/40 | No  | Yes | Yes |
+| llama3_3_70b_instruct_q3_K_M       | 0.85 | 1/20; 1/20 | Yes | Yes | Yes |
+| llama3_3_70b_instruct_q3_K_M_run_2 | 1.72 | 1/30; 1/30 | Yes | Yes | No  |
+| llama3_3_70b_instruct_q3_K_M_run_3 | 2.72 | 1/30; 1/40 | Yes | Yes | No  |
+| llama3_3_70b_instruct_q4_K_M       | 0.0  | na         | No  | Yes | Yes |
+
+### No-framework
+
+| LLM | Time to Death (s) | Snake/board ratio | System status clear | GUI | Grid rendered |
+|---|---|---|---|---|---|
+| qwen2_5_32b_instruct_q4_K_M               | 2.10 | 1/40; 1/60 | No  | Yes | No  |
+| gemma3_27b_it_fp16                        | 1.37 | 1/20; 1/30 | Yes | Yes | No  |
+| qwen2_5_7b_instruct_fp16                  | 2.1  | 1/40; 1/60 | No  | Yes | No  |
+| qwen2_5_7b_instruct_q4_K_M                | na   | 1/20; 1/20 | No  | Yes | No  |
+| gpt_oss_20b_run_2                         | 0.48 | 1/10; 1/10 | No  | Yes | Yes |
+| deepseek_coder_v2_16b_lite_instruct_fp16  | 0.91 | 1/10; 1/10 | No  | Yes | No  |
+| gemma3_27b_it_q4_K_M                      | 1.07 | 1/20; 1/20 | Yes | Yes | Yes |
+| llama3_3_70b_instruct_q3_K_M              | 2.81 | 1/30; 1/40 | Yes | Yes | No  |
+| llama3_3_70b_instruct_q3_K_M_run_2        | 1.61 | 1/30; 1/20 | Yes | Yes | Yes |
+| llama3_3_70b_instruct_q4_K_M              | 2.10 | 1/25; 1/35 | No  | Yes | No  |
+| llama3_3_70b_instruct_q4_K_M_run_3        | 2.80 | 1/30; 1/40 | Yes | Yes | No  |
+| nemotron_70b_instruct_q8_0                | 0.81 | 1/10; 1/10 | Yes | Yes | No  |
+| qwen2_5_32b_instruct_fp16                 | na   | 1/40; 1/50 | Yes | Yes | No  |
+| qwen2_5_coder_32b_instruct_fp16           | 2.21 | 1/40; 1/50 | No  | Yes | No  |
+| qwen2_5_coder_32b_instruct_q4_K_M         | na   | 1/40; 1/50 | No  | Yes | No  |
+
+
 # Qualitative evaluation - Subjective metrics
 ## (Score: Playability - Entertainment - Aesthetics)
+Only models that produced executable code are reported
 
 ### MetaGPT
 
