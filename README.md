@@ -191,3 +191,28 @@ The visual appeal and overall presentation of the game.
 - Good color contrast
 - Clean UI with readable elements
 
+### Agent role average running time comparison table
+
+| Framework  | Agent Role              |     UC1 |      UC2 |
+|------------|-------------------------|--------:|---------:|
+| MetaGPT    | Product Manager         |  136.22 |   182.93 |
+|            | Architect               |  116.95 |   154.32 |
+|            | Project Manager         |   58.34 |   149.70 |
+|            | Engineer                |  398.86 |  1228.47 |
+|            | Code Reviewer           | 1022.58 |  1266.60 |
+| ChatDev    | Chief Product Officer   |  797.67 |  1563.28 |
+|            | Chief Executive Officer | 1028.00 |  2633.14 |
+|            | Counselor               |   58.67 |   458.28 |
+|            | Chief Technology Officer|  255.33 |   859.71 |
+|            | Programmer              | 1157.33 |  2556.28 |
+|            | Code Reviewer           |  892.33 |  2095.14 |
+|            | Software Test Engineer  |  181.33 |   248.50 |
+| AgileCoder | Product Owner           | 3404.33 |  3290.87 |
+|            | Development Team        | 2214.83 | 1807.125 |
+|            | Programmer              | 8696.33 |  9782.37 |
+|            | Code Reviewer           | 5132.33 |  4964.50 |
+|            | Software Test Engineer  | 2524.83 |  3804.87 |
+| HyperAgent | Planner                 |  281.37 |   272.14 |
+|            | Navigator Manager       |  386.20 |   136.56 |
+|            | Editor Manager          |   26.15 |   330.55 |
+|            | Executor Manager        |   20.23 |   499.02 |
