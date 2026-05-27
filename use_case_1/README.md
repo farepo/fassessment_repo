@@ -99,32 +99,150 @@ Notation:
 | devstral_24b_fp16 + HyperAgent | Y | N | 2649.08 | 0 |
 
 
-# Qualitative evaluation
-## (Score: functionalities - usability - appearence)
+# Qualitative evaluation - Subjective metrics
+## (Score: Playability - Entertainment - Aesthetics)
 
 ### MetaGPT
 
-#### gpt_oss_20b
-Score: 4-1-2  
-Requirements met: 8/10  
-Game playable only via terminal. Small game board and too fast snake movement affect usability.
-
-<img src="../images/use_case_1/metagpt-gpt_oss_20b.JPG" width="400">
+| LLM | Annotator | Playability | Entertainment | Aesthetics |
+|---|---|---|---|---|
+| qwen2_5_32b_instruct_q4_K_M  | Annotator 1 | 1 | 1 | 2 |
+|                              | Annotator 2 | 1 | 1 | 2 |
+|                              | Annotator 3 | 1 | 2 | 2 |
+|                              | Annotator 4 | 1 | 1 | 2 |
+| gemma3_27b_it_fp16           | Annotator 1 | 1 | 1 | 1 |
+|                              | Annotator 2 | 1 | 1 | 1 |
+|                              | Annotator 3 | 1 | 1 | 1 |
+|                              | Annotator 4 | 1 | 1 | 1 |
+| qwen2_5_7b_instruct_q4_K_M   | Annotator 1 | 1 | 1 | 1 |
+|                              | Annotator 2 | 1 | 1 | 1 |
+|                              | Annotator 3 | 1 | 1 | 1 |
+|                              | Annotator 4 | 1 | 1 | 1 |
+| gpt_oss_20b                  | Annotator 1 | 1 | 1 | 1 |
+|                              | Annotator 2 | 1 | 2 | 1 |
+|                              | Annotator 3 | 1 | 1 | 1 |
+|                              | Annotator 4 | 1 | 1 | 2 |
+| llama3_3_70b_instruct_q3_K_M | Annotator 1 | 3 | 3 | 3 |
+|                              | Annotator 2 | 3 | 2 | 3 |
+|                              | Annotator 3 | 3 | 3 | 3 |
+|                              | Annotator 4 | 2 | 2 | 2 |
+| devstral_24b_small_2505_fp16 | Annotator 1 | 3 | 2 | 2 |
+|                              | Annotator 2 | 3 | 2 | 2 |
+|                              | Annotator 3 | 3 | 2 | 2 |
+|                              | Annotator 4 | 3 | 2 | 2 |
 
 ### ChatDev
 
-#### gpt_oss_20b
-Score: 5-5-5  
-Requirements met: 10/10  
-All requirements met, included some snake movement animation effects.
+| LLM | Annotator | Playability | Entertainment | Aesthetics |
+|---|---|---|---|---|
+| gpt_oss_20b                  | Annotator 1 | 2 | 2 | 3 |
+|                              | Annotator 2 | 2 | 2 | 3 |
+|                              | Annotator 3 | 3 | 2 | 2 |
+|                              | Annotator 4 | 2 | 2 | 2 |
+| llama3_3_70b_instruct_q3_K_M | Annotator 1 | 1 | 1 | 2 |
+|                              | Annotator 2 | 1 | 1 | 2 |
+|                              | Annotator 3 | 1 | 1 | 1 |
+|                              | Annotator 4 | 1 | 1 | 1 |
+| llama3_3_70b_instruct_q4_K_M | Annotator 1 | 1 | 1 | 2 |
+|                              | Annotator 2 | 1 | 1 | 1 |
+|                              | Annotator 3 | 1 | 1 | 3 |
+|                              | Annotator 4 | 1 | 1 | 2 |
 
-<img src="../images/use_case_1/chatdev-gpt_oss_20b.JPG" width="400">
+### AgileCoder
+
+| LLM | Annotator | Playability | Entertainment | Aesthetics |
+|---|---|---|---|---|
+| qwen2_5_32b_instruct_q4_K_M  | Annotator 1 | 2 | 1 | 2 |
+|                              | Annotator 2 | 3 | 1 | 2 |
+|                              | Annotator 3 | 3 | 2 | 2 |
+|                              | Annotator 4 | 2 | 2 | 2 |
+| gemma3_27b_it_fp16           | Annotator 1 | 1 | 1 | 2 |
+|                              | Annotator 2 | 1 | 1 | 2 |
+|                              | Annotator 3 | 1 | 1 | 2 |
+|                              | Annotator 4 | 1 | 1 | 2 |
+| gpt_oss_20b                  | Annotator 1 | 1 | 1 | 2 |
+|                              | Annotator 2 | 1 | 1 | 2 |
+|                              | Annotator 3 | 1 | 1 | 3 |
+|                              | Annotator 4 | 1 | 2 | 1 |
+| llama3_3_70b_instruct_q4_K_M | Annotator 1 | 2 | 1 | 2 |
+|                              | Annotator 2 | 2 | 1 | 2 |
+|                              | Annotator 3 | 2 | 2 | 2 |
+|                              | Annotator 4 | 1 | 1 | 2 |
+
+### HyperAgent
+
+| LLM | Annotator | Playability | Entertainment | Aesthetics |
+|---|---|---|---|---|
+| llama3_3_70b_instruct_q3_K_M       | Annotator 1 | 3 | 2 | 3 |
+|                                    | Annotator 2 | 3 | 3 | 3 |
+|                                    | Annotator 3 | 3 | 3 | 3 |
+|                                    | Annotator 4 | 2 | 2 | 2 |
+| llama3_3_70b_instruct_q3_K_M_run_2 | Annotator 1 | 3 | 3 | 2 |
+|                                    | Annotator 2 | 3 | 2 | 2 |
+|                                    | Annotator 3 | 3 | 3 | 2 |
+|                                    | Annotator 4 | 2 | 2 | 1 |
+| llama3_3_70b_instruct_q3_K_M_run_3 | Annotator 1 | 3 | 2 | 2 |
+|                                    | Annotator 2 | 3 | 2 | 2 |
+|                                    | Annotator 3 | 3 | 3 | 2 |
+|                                    | Annotator 4 | 2 | 2 | 1 |
 
 ### No-framework
 
-#### deepseek_r1_32b_qwen_distill_q4_K_M
-Score: 4-1-2  
-Requirements met: 8/10  
-Game is playable only via terminal. There's latency in snake movement that reduces usability.
-
-<img src="../images/use_case_1/no-framework-deepseek_r1_32b_qwen_distill_q4_K_M.JPG" width="400">
+| LLM | Annotator | Playability | Entertainment | Aesthetics |
+|---|---|---|---|---|
+| qwen2_5_32b_instruct_q4_K_M               | Annotator 1 | 2 | 1 | 2 |
+|                                           | Annotator 2 | 3 | 2 | 2 |
+|                                           | Annotator 3 | 3 | 2 | 2 |
+|                                           | Annotator 4 | 2 | 1 | 1 |
+| gemma3_27b_it_fp16                        | Annotator 1 | 3 | 2 | 2 |
+|                                           | Annotator 2 | 3 | 2 | 2 |
+|                                           | Annotator 3 | 3 | 3 | 2 |
+|                                           | Annotator 4 | 2 | 2 | 2 |
+| qwen2_5_7b_instruct_fp16                  | Annotator 1 | 3 | 2 | 1 |
+|                                           | Annotator 2 | 3 | 2 | 2 |
+|                                           | Annotator 3 | 3 | 2 | 2 |
+|                                           | Annotator 4 | 2 | 1 | 1 |
+| gpt_oss_20b_run_2                         | Annotator 1 | 2 | 1 | 2 |
+|                                           | Annotator 2 | 2 | 2 | 2 |
+|                                           | Annotator 3 | 2 | 2 | 3 |
+|                                           | Annotator 4 | 2 | 1 | 1 |
+| deepseek_coder_v2_16b_lite_instruct_fp16  | Annotator 1 | 1 | 1 | 1 |
+|                                           | Annotator 2 | 1 | 1 | 1 |
+|                                           | Annotator 3 | 1 | 1 | 1 |
+|                                           | Annotator 4 | 1 | 1 | 1 |
+| gemma3_27b_it_q4_K_M                      | Annotator 1 | 3 | 2 | 3 |
+|                                           | Annotator 2 | 3 | 3 | 3 |
+|                                           | Annotator 3 | 3 | 3 | 2 |
+|                                           | Annotator 4 | 2 | 2 | 2 |
+| llama3_3_70b_instruct_q3_K_M              | Annotator 1 | 3 | 3 | 2 |
+|                                           | Annotator 2 | 3 | 2 | 2 |
+|                                           | Annotator 3 | 3 | 3 | 2 |
+|                                           | Annotator 4 | 2 | 2 | 2 |
+| llama3_3_70b_instruct_q3_K_M_run_2        | Annotator 1 | 3 | 3 | 3 |
+|                                           | Annotator 2 | 3 | 3 | 3 |
+|                                           | Annotator 3 | 3 | 2 | 2 |
+|                                           | Annotator 4 | 2 | 2 | 2 |
+| llama3_3_70b_instruct_q4_K_M              | Annotator 1 | 1 | 1 | 2 |
+|                                           | Annotator 2 | 1 | 1 | 2 |
+|                                           | Annotator 3 | 1 | 1 | 2 |
+|                                           | Annotator 4 | 1 | 1 | 2 |
+| llama3_3_70b_instruct_q4_K_M_run_3        | Annotator 1 | 2 | 2 | 2 |
+|                                           | Annotator 2 | 3 | 3 | 2 |
+|                                           | Annotator 3 | 3 | 3 | 2 |
+|                                           | Annotator 4 | 2 | 2 | 2 |
+| nemotron_70b_instruct_q8_0                | Annotator 1 | 1 | 1 | 2 |
+|                                           | Annotator 2 | 2 | 1 | 2 |
+|                                           | Annotator 3 | 2 | 1 | 2 |
+|                                           | Annotator 4 | 1 | 1 | 1 |
+| qwen2_5_32b_instruct_fp16                 | Annotator 1 | 2 | 2 | 1 |
+|                                           | Annotator 2 | 2 | 2 | 2 |
+|                                           | Annotator 3 | 3 | 3 | 2 |
+|                                           | Annotator 4 | 2 | 2 | 1 |
+| qwen2_5_coder_32b_instruct_fp16           | Annotator 1 | 3 | 2 | 1 |
+|                                           | Annotator 2 | 3 | 2 | 2 |
+|                                           | Annotator 3 | 3 | 2 | 2 |
+|                                           | Annotator 4 | 2 | 1 | 1 |
+| qwen2_5_coder_32b_instruct_q4_K_M         | Annotator 1 | 3 | 2 | 1 |
+|                                           | Annotator 2 | 2 | 2 | 2 |
+|                                           | Annotator 3 | 3 | 2 | 2 |
+|                                           | Annotator 4 | 2 | 1 | 1 |

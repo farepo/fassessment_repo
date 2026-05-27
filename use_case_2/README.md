@@ -152,12 +152,16 @@ Notation:
 
 
 # Qualitative evaluation
-## (Score: functionalities - usability - appearence)
+## (Score: Playability - Entertainment - Aesthetics)
 
 ### ChatDev
 
 #### chatdev-gemma3_27b_it_fp16
-Score: 3-3-3  
+Score:
+- annotator 1:
+- annotator 2:
+- annotator 3:
+- annotator 4: 
 Requirements met: 4/12  
 GUI is well implemented and DB is correctly implemented. Insert and close tickets functionalities implemented. 
 No Login and other functionalities (services, etc...) implemented.
@@ -165,7 +169,11 @@ No Login and other functionalities (services, etc...) implemented.
 <img src="../images/use_case_2/chatdev-gemma3_27b_it_fp16.JPG" width="400">
 
 #### qwen2_5_32b_instruct_q4_K_M-1
-Score: 2-2-2  
+Score:
+- annotator 1:
+- annotator 2:
+- annotator 3:
+- annotator 4:  
 Requirements met: 3/12  
 User and admin GUI implemented. Insert tickets functionality works but the GUI duplicates all tickets entries for each new ticket created. 
 Update tickets doesn’t work. Microservices not implemented.
@@ -175,7 +183,11 @@ Update tickets doesn’t work. Microservices not implemented.
 ### AgileCoder
 
 #### gpt_oss_20b
-Score: 2-1-3  
+Score:
+- annotator 1:
+- annotator 2:
+- annotator 3:
+- annotator 4: 
 Requirements met: 2/12  
 This solution has a small SQL bug that if fixed would produce a very good solution with almost
 all requirements met:
@@ -195,7 +207,11 @@ All the requirements met except for the message exchange functionality.
 ### No-framework
 
 #### llama3_3_70b_instruct_q4_K_M
-Score: 4-4-4  
+Score:
+- annotator 1:
+- annotator 2:
+- annotator 3:
+- annotator 4:  
 Requirements met: 6/12  
 GUI is well implemented, but there is no possibility to view inserted tickets immediately after insertion.
 Exchange messages functionality is implemented.
